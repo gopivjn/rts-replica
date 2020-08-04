@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://use.typekit.net/ogd2mxl.css");
 :root {
   --primary-color: #ed4948;
   --secondary-color: #f99500;
@@ -19,8 +21,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  line-height: 1.5;
+  font-family: "Spectral", serif;
   background: var(--light-color);
 }
 
@@ -59,6 +60,7 @@ p {
   grid-template-rows: 1fr;
   padding: 1rem;
   align-items: center;
+  height: 74px;
 }
 
 #main-nav .logo {
@@ -77,6 +79,9 @@ p {
   display: inline-block;
   margin-right: 3rem;
   justify-self: end;
+  font-family: futura-pt, sans-serif;
+  font-size: 12.6px;
+  color: var(--dark-color);
 }
 
 #main-nav ul li a:hover {
@@ -103,13 +108,61 @@ p {
 
 #about p {
   color: #333;
-  line-height: 2rem;
-  line-height: 2.5rem;
-  padding-top: 90px;
+  line-height: 3rem;
+  padding-top: 30px;
   text-align: center;
   font-size: 18px;
-  padding-left: 90px;
-  padding-right: 90px;
+  margin: 2rem 35rem;
+  font-family: futura-pt, sans-serif;
+  font-size: 18px;
+}
+
+#about .intro {
+  font-family: "Spectral", serif;
+  font-style: italic;
+  font-size: 32.4px;
+  line-height: 5rem;
+  margin: 10rem 15rem 3rem 15rem;
+  text-align: center;
+}
+
+#grid_image .gridimage {
+  padding: 5rem 10rem;
+  margin-bottom: 5rem;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 30% !important;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.carousel-caption h1 {
+  font-family: "Spectral", serif;
+  font-size: 54px;
+  font-style: italic;
+}
+
+.carousel-caption h3 {
+  font-family: futura-pt, sans-serif;
+  font-size: 25.2px;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #ed4948;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 /* Highlighter lines */
@@ -118,9 +171,8 @@ p {
   width: 20rem;
   background: var(--primary-color);
   display: block;
-  margin: 0 auto 0 auto;
   border-radius: 10px;
-  margin-top: 35px;
+  margin: 0 auto;
 }
 
 .bottom-line2 {
