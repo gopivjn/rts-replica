@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #ed3833;
+  --primary-color: #ed4948;
   --secondary-color: #f99500;
   --light-color: #f3f3f3;
   --dark-color: #333;
@@ -63,7 +63,6 @@ p {
   grid-template-rows: 1fr;
   padding: 1rem;
   align-items: center;
-  justify-content: space-between;
 }
 
 #main-nav .logo {
@@ -71,9 +70,9 @@ p {
 }
 
 #main-nav ul {
-  justify-self: end;
   display: flex;
   flex-direction: row;
+  margin-left: auto;
 }
 
 #main-nav ul li a {
@@ -82,12 +81,8 @@ p {
   text-transform: uppercase;
   display: inline-block;
   margin-right: 3rem;
+  justify-self: end;
 }
-
-// #main-nav ul li a.current {
-//   background: var(--primary-color);
-//   color: #fff;
-// }
 
 #main-nav ul li a:hover {
   color: var(--primary-color);
@@ -103,10 +98,110 @@ p {
   transform: translateX(-50%);
   border-radius: 100%;
   position: absolute;
-  background: #ed3833;
+  background: var(--primary-color);
   height: 6px;
   content: "";
   width: 6px;
   left: 50%;
   bottom: 2px;
+}
+
+#about p {
+  color: #333;
+
+  line-height: 2rem;
+  line-height: 2.5rem;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Highlighter lines */
+
+.bottom-line1 {
+  height: 0.6rem;
+  width: 20rem;
+  background: var(--primary-color);
+  display: block;
+  margin: 0 auto 0 auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 35px;
+}
+
+.bottom-line2 {
+  height: 0.6rem;
+  width: 20rem;
+  background: var(--light-color);
+  display: block;
+  // margin: 0 auto 0 auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+/* Flex columns */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+.bg-secondary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+// Services section
+#card-grid img {
+  width: 60px;
 }
