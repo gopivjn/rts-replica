@@ -136,8 +136,6 @@ p {
 #grid_image .gridimage {
   padding: 5rem 10rem;
   margin-bottom: 5rem;
-  // padding-left: 10rem;
-  // padding-right: 10rem;
 }
 // ~~~~~~~~~~~~~~ Carousel ~~~~~~~~~~~~~~~~~~~~~~`
 
@@ -159,6 +157,12 @@ p {
     font-size: 25.2px;
   }
 }
+.section_header h2 {
+  font-family: "Spectral", serif;
+  font-size: 44px;
+  text-align: center;
+  padding-top: 90px;
+}
 
 /* Button */
 .btn {
@@ -170,6 +174,25 @@ p {
   text-decoration: none;
   border: none;
   border-radius: 5px;
+}
+
+.btn2 {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: #ed4948;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn2 a {
+  text-decoration: none;
+}
+
+.btn a {
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -262,4 +285,46 @@ p {
 // Services section
 #card-grid img {
   width: 60px;
+}
+
+// Footer
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: 2fr 7fr 2fr;
+  grid-gap: 2rem;
+}
+
+#main-footer {
+  background: #35363b;
+  color: #fff;
+  padding: 50px;
+  margin-top: 15rem;
+}
+
+#main-footer img {
+  width: 175px;
+}
+#main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+#main-footer p {
+  font-size: 12px;
+  padding-right: 150px;
+  padding-left: 50px;
+}
+
+#main-footer a:hover {
+  color: #28a745;
+}
+#main-footer .footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-footer p {
+  font-size: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
